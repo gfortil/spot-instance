@@ -15,17 +15,17 @@ This module returns the current cheapest spot region as a string.
 | Name |Description|Type| 
 |----|-----------|----|
 | vm_size | The size of the virtual machine that is intended to be used for the AKS deployment. | string |
-| rank |  Returns the cheapest, the second, or another rank. | string |
+| rank |  A positive number that represents the nth cheapest instance. Example: rank = 1 | string |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | post_region | Outputs the cheapest region based on the VM size and rank |
-| vm_size | Returns the VM size |
-| current_price | Returns the current price for a spot instance of the specified size in the cheapest spot region |
-| payg_price | Returns the price for a standard instance in the same region based on the pay-as-you-go model |
-| saving_on_payg | Returns the current percentage of saving on a pay-as-you-go instance |
+| vm_size | Outputs the VM size |
+| current_price | Outputs the current price for a spot instance of the specified size in the cheapest spot region |
+| payg_price | Outputs the price for a standard instance in the same region based on the pay-as-you-go model |
+| saving_on_payg | Outputs the current percentage of saving on a pay-as-you-go instance |
 
 ## Example
 
